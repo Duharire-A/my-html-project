@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Doctor Appointment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+  <style>/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('bookbackground.PNG') no-repeat center center fixed;
+    background-size: cover; /* Make it cover the whole page */
+}
+
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 35px;
+  height: 35px;
+  background: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to bottom right, #e0f2fe, #dbeafe);
+  padding: 60px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.hero-icon {
+  font-size: 80px;
+  color: #2563eb;
+}
+
+/* FEATURES */
+.features {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card-icon {
+  background: #dbeafe;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* CTA */
+.cta {
+  background: #2563eb;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cta-sub {
+  margin-bottom: 20px;
+  color: #dbeafe;
+}
+
+.btn-light {
+  background: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.btn-light:hover {
+  background: #f3f4f6;
+}
+</style>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <span class="logo-text">
+        <a href="try-web.html">MedHope</a>
+      </span>
+    </div>
+
+      <nav class="nav">
+        <a href="homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Your Health, Our Priority</h1>
+        <p>
+          Connect with qualified healthcare professionals and book appointments instantly.
+          
+        </p>
+        <a href="booknow.html" class="btn-primary">Book an Appointment</a>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-img-box">
+          <span class="hero-icon">👨‍⚕️</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features">
+    <div class="container">
+      <div class="section-title">
+        <a href="About"> <h2>Why Choose Us</h2></a>
+
+        <p>At MedHope ,We make healthcare accessible and convenient for everyone</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="card">
+          <div class="card-icon">📅</div>
+          <h3>Easy Scheduling</h3>
+          <p>Book appointments with top doctors in just a few clicks.</p>
+          <ul>
+            <li>Cardiologist
+            <li>Dermatologist
+            <li>Dentist
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⏰</div>
+          <h3>24/7 Availability</h3>
+          <p>Access our platform anytime, anywhere.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">👩‍⚕️</div>
+          <h3>Expert Doctors</h3>
+          <p>Choose from a wide range of qualified specialists.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Secure & Private</h3>
+          <p>Your health information is protected and confidential.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta">
+    <div class="container text-center">
+      <h2 class="cta-title">Ready to Get Started?</h2>
+      <p class="cta-sub">Book your appointment today and experience quality healthcare</p>
+      <a href="#" class="btn-light">Find a Doctor</a>
+    </div>
+  </section>
+
+</body>
+</html>
