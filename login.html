@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedHop Login</title>
+
+    <style>
+        /* Background */
+        body {
+            background: linear-gradient(to bottom right, #60a5fa, #2563eb);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ---------------------- NAVIGATION BAR ---------------------- */
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center; /* centers navbar */
+            gap: 25px;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(6px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .signup-btn {
+            padding: 10px 16px;
+            background: #0047b3;
+            border-radius: 8px;
+        }
+
+        /* ---------------------- PAGE CENTER ---------------------- */
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top: 120px; /* space for nav */
+            padding-bottom: 50px; /* space for footer */
+        }
+
+        /* Login box */
+        .login-container {
+            background: #ffffff;
+            padding: 40px;
+            width: 380px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo {
+            width: 90px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 2px solid #00aaff;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-field:focus {
+            border-color: #0066ff;
+            box-shadow: 0 0 8px rgba(0, 102, 255, 0.4);
+        }
+
+        .login-btn {
+            width: 100%;
+            background: #0066ff;
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #0047b3;
+            transform: scale(1.03);
+        }
+
+        .links {
+            margin-top: 15px;
+        }
+
+        .links a {
+            color: #0066ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------------------- FOOTER ---------------------- */
+        footer {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            backdrop-filter: blur(4px);
+            font-size: 16px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="try-web.html.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+    </nav>
+
+    <!-- LOGIN FORM -->
+    <div class="page-wrapper">
+        <div class="login-container">
+            <img src="logo.png" alt="MedHop Logo" class="logo" />
+            <h2>MedHope Login</h2>
+
+            <input type="email" class="input-field" placeholder="Enter your email" required />
+            <input type="password" class="input-field" placeholder="Enter your password" required />
+
+            <button class="login-btn">Login</button>
+
+            <div class="links">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                <p><a href="#">Forgot password?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 MedHope — Connecting You to the Best Doctors
+    </footer>
+
+</body>
+</html>
