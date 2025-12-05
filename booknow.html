@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #dbeafe, #93c5fd);
+            color: #1e3a8a;
+        }
+
+        /* HEADER */
+        header {
+            background: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #1e3a8a;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        /* NAV */
+        nav {
+            background: #2563eb;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #bfdbfe;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        .card h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #93c5fd;
+            margin-top: 6px;
+            margin-bottom: 18px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus, select:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 6px rgba(37,99,235,0.4);
+        }
+
+        /* BUTTON */
+        button {
+            width: 100%;
+            background: #2563eb;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(37,99,235,0.4);
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1e40af;
+            box-shadow: 0 6px 14px rgba(30,64,175,0.45);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(15px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Book an Appointment
+</header>
+
+<nav>
+    <a href="try-web.html.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="appointment.html">Book Appointment</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>Appointment Form</h2>
+
+        <form action="treatment.php" method="post">
+
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" placeholder="Enter your full name">
+
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="example@gmail.com">
+
+            <label>Select Doctor:</label><br>
+            <select name="doctor">
+                <option>Dr. Ella Rachelle Niyitunga – Cardiologist</option>
+                <option>Dr. Nadia Ishimwe – Gynecologist</option>
+                <option>Dr. Stephane – Dentist</option>
+            </select>
+
+            <label>Appointment Date:</label><br>
+            <input type="date" name="date">
+
+            <button type="submit">Save and Submit</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
